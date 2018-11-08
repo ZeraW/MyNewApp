@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <android.support.v7.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2.5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="2.5dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="10dp">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/Menu_Img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Menu_Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:singleLine="true"
+                android:text="title zft"
+                app:layout_constraintEnd_toStartOf="@+id/Menu_Price"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@+id/Menu_Img"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <RatingBar
+                android:id="@+id/Menu_ratingBar"
+                style="?android:ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:isIndicator="true"
+                app:layout_constraintStart_toEndOf="@+id/Menu_Img"
+                app:layout_constraintTop_toBottomOf="@+id/Menu_Title" />
+
+            <TextView
+                android:id="@+id/Menu_ratingCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="5dp"
+                android:text="(50)"
+                app:layout_constraintStart_toEndOf="@+id/Menu_ratingBar"
+                app:layout_constraintTop_toBottomOf="@+id/Menu_Title" />
+
+            <TextView
+                android:id="@+id/Menu_Price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="16dp"
+                android:text="150"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/Menu_buybtn"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="18dp"
+                android:src="@drawable/ic_add_circle"
+                android:tint="@android:color/holo_green_dark"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Menu_Price"
+                app:layout_constraintVertical_bias="0.75" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>
+
