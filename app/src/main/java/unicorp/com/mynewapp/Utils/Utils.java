@@ -16,9 +16,4 @@ public class Utils {
 	public static final String addJobs = "AddJobFragment";
 	public static final String UserProducts = "UserProductsListFragment";
 	public static final String UserJobs = "UserJobsListFragment";
-
-
-
-
-
 }

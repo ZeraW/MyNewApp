@@ -13,43 +13,44 @@
 
         <LinearLayout
             android:id="@+id/toolbar"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:orientation="horizontal"
             android:weightSum="10"
-            >
+            app:popupTheme="@style/AppTheme.PopupOverlay">
 
             <ImageView
                 android:id="@+id/btnz"
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="2"
-                android:padding="12dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/ic_stat_drawer"
                 android:background="@android:color/transparent"
-                />
+                android:padding="12dp"
+                android:src="@drawable/ic_stat_drawer" />
+
             <ImageView
                 android:id="@+id/search_bar_icon"
                 android:layout_width="0dp"
-                android:layout_weight="6"
                 android:layout_height="match_parent"
+                android:layout_weight="6"
+                android:paddingBottom="12dp"
+                android:paddingTop="12dp"
                 android:src="@drawable/searchbar"
                 android:tint="@android:color/white"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
 
                 />
+
             <ImageView
                 android:id="@+id/btncart"
                 android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="2"
-                android:padding="12dp"
-                android:layout_height="?attr/actionBarSize"
-                android:src="@drawable/ic_stat_name"
                 android:background="@android:color/transparent"
-                />
+                android:padding="12dp"
+                android:src="@drawable/ic_stat_name" />
 
         </LinearLayout>
 

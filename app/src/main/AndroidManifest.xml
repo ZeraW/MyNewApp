@@ -51,7 +51,11 @@
         <activity
             android:name=".Activity.AboutUsActivity"
             android:label="@string/title_activity_about_us" />
-        <activity android:name=".Activity.NotificationActivity"></activity>
+        <activity android:name=".Activity.NotificationActivity" />
+        <activity
+            android:name=".Activity.FavoriteActivity"
+            android:label="@string/title_activity_favorite2"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
